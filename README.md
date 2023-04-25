@@ -1,6 +1,6 @@
 # Gmail Clone
 
-Frontend deployed URL : https://gmail-clone-using-electron-frontend.netlify.app
+Frontend deployed URL : https://gmail-clone-using-electron-desktop-ap.netlify.app
 
 Backend deployed URL :
 
