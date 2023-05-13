@@ -26,6 +26,23 @@ app.get('/', async (req, res) => {
     }
 })
 
+// getting all emails of a particular user
+app.get('/getEmails/:userEmail', async (req, res) => {
+    const client = await MongoClient.connect(dbUrl)
+    try {
+        const db = await client.db('Gmail_Clone')
+        let usersEmails = await db.collection('All Emails').find({emailTo:req.params.userEmail}).toArray()
+        res.status(200).send(usersEmails)
+    }
+    catch (error) {
+        console.log(error);
+        res.status(500).send({ message: 'Internal server error', error })
+    }
+    finally {
+        client.close()
+    }
+})
+
 // sending new email to All Emails collection
 app.post('/newEmail', async (req, res) => {
     const client = await MongoClient.connect(dbUrl)
