@@ -13,5 +13,5 @@ I am creating Gmail Clone App using React.js for frontend and Node.js for backen
 SPECIFICATIONS :
 - User login
 - User signup
-- Email service
+- Email services
 
