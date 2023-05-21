@@ -14,4 +14,5 @@ SPECIFICATIONS :
 - User login
 - User signup
 - Email services
+- Firebase phone number authentication
 
