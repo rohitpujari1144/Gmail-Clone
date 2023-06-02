@@ -30,14 +30,14 @@ function SignupPhoneNumber() {
             mobileError.innerHTML=`<i class="fa-sharp fa-solid fa-circle-exclamation"></i> Required`
         }
         else{
-            // try{  
-            //     let recaptchaVerifier= await new RecaptchaVerifier("captchaDiv", {}, auth);
-            //     let confirmation=await signInWithPhoneNumber(auth, phone, recaptchaVerifier);
-            //     console.log(confirmation);
-            //     setUser(confirmation)
-            //   }catch(error){
-            //     console.log(error);
-            //   }
+             try{  
+                 let recaptchaVerifier= await new RecaptchaVerifier("captchaDiv", {}, auth);
+                 let confirmation=await signInWithPhoneNumber(auth, phone, recaptchaVerifier);
+                 console.log(confirmation);
+                 setUser(confirmation)
+               }catch(error){
+                 console.log(error);
+               }
         }
       }
 
@@ -48,15 +48,15 @@ function SignupPhoneNumber() {
         }
         else{
             document.getElementById('otpError').innerHTML=''
-            // try{
-            //     await user.confirm(otp)
-            //     navigate('/basic-information')
-            //     userSignupData.mobile=document.getElementById('mobile').value
-            //     sessionStorage.setItem('userSignupData', JSON.stringify(userSignupData))
+             try{
+                 await user.confirm(otp)
+                 navigate('/basic-information')
+                 userSignupData.mobile=document.getElementById('mobile').value
+                 sessionStorage.setItem('userSignupData', JSON.stringify(userSignupData))
         
-            //   }catch(error){
-            //     document.getElementById('otpError').innerHTML= `<i class="fa-sharp fa-solid fa-circle-exclamation"></i> Incorrect OTP`
-            //   }
+               }catch(error){
+                 document.getElementById('otpError').innerHTML= `<i class="fa-sharp fa-solid fa-circle-exclamation"></i> Incorrect OTP`
+               }
             navigate('/basic-information')
         }
       }
