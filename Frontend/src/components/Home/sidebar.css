@@ -1,0 +1,7 @@
+.icon:hover{
+    cursor: pointer;
+}
+
+.inbox:hover{
+    border-bottom: 3px solid rgb(0, 217, 255);
+}
