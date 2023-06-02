@@ -8,7 +8,7 @@ For Emails : https://gmail-clone-email-be.onrender.com
 
 For Users : https://gmail-clone-be-zsgo.onrender.com
 
-I am building Gmail Clone App using React.js for frontend and Node.js for backend.
+I have built Gmail Clone Web App using React.js for frontend and Node.js for backend.
 
 SPECIFICATIONS :
 - User login
