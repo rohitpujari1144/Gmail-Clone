@@ -1,0 +1,7 @@
+.icon{
+    cursor: pointer;
+}
+
+.unreadMail:hover{
+    background-color: rgb(190, 238, 245);
+}
