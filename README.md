@@ -7,8 +7,8 @@ I have built Gmail Clone Web App using React.js for frontend and Node.js for bac
   - Backend: Node.js
   - Database: MongoDB
 
-SPECIFICATIONS :
-- User login
+- Specifications:
+  - User login
 - User signup
 - Email services
 - Phone number authentication using Firebase
