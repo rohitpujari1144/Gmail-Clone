@@ -9,13 +9,13 @@ I have built Gmail Clone Web App using React.js for frontend and Node.js for bac
 
 - Specifications:
   - User login
-- User signup
-- Email services
-- Phone number authentication using Firebase
+  - User signup
+  - Email services
+  - Phone number authentication using Firebase
 
-Frontend deployed URL : https://gmail-clone-using-electron-frontend.netlify.app/
+- Frontend deployed URL : https://gmail-clone-using-electron-frontend.netlify.app/
 
-Backend deployed URL :
+- Backend deployed URL :
 
   - For Emails : https://gmail-clone-email-be.onrender.com
 
