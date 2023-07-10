@@ -2,6 +2,11 @@
 
 I have built Gmail Clone Web App using React.js for frontend and Node.js for backend.
 
+- Technologies used:
+  - Frontend: React.js
+  - Backend: Node.js
+  - Database: MongoDB
+
 SPECIFICATIONS :
 - User login
 - User signup
@@ -11,7 +16,5 @@ SPECIFICATIONS :
 Frontend deployed URL : https://gmail-clone-using-electron-frontend.netlify.app/
 
 Backend deployed URL :
-
 For Emails : https://gmail-clone-email-be.onrender.com
-
 For Users : https://gmail-clone-be-zsgo.onrender.com
