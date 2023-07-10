@@ -8,6 +8,7 @@ app.use(express.json())
 const dbUrl = 'mongodb+srv://rohit10231:rohitkaranpujari@cluster0.kjynvxt.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
 const port = 4000
+const bcrypt = require('bcrypt')
 
 // getting all users information
 app.get('/', async (req, res) => {
@@ -31,13 +32,7 @@ app.get('/login/:email', async (req, res) => {
     const client = await MongoClient.connect(dbUrl)
     try {
         const db = await client.db('Gmail_Clone')
-
-        // for first step of login, email check
         let user = await db.collection('All Users').aggregate([{ $match: { username: req.params.email } }]).toArray()
-
-        // for password change flow
-        let userNames = await db.collection('All Users').aggregate([{ $match: { firstName: req.body.firstName, lastName: req.body.lastName, mobile: req.body.mobile } }]).toArray()
-
         if (user.length !== 0 || user.length !== 0) {
             res.status(200).send({ message: "user found", data: user })
         }
@@ -83,6 +78,9 @@ app.post('/signup', async (req, res) => {
     const client = await MongoClient.connect(dbUrl)
     try {
         const db = await client.db('Gmail_Clone')
+        // const salt = await bcrypt.genSalt(10)
+        // const secPassword = await bcrypt.hash(req.body.password, salt)
+        // req.body.password = secPassword
         await db.collection('All Users').insertOne(req.body)
         res.status(201).send({ message: 'User Registartion Successful', data: req.body })
     }
