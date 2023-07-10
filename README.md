@@ -17,6 +17,6 @@ Frontend deployed URL : https://gmail-clone-using-electron-frontend.netlify.app/
 
 Backend deployed URL :
 
-For Emails : https://gmail-clone-email-be.onrender.com
+  - For Emails : https://gmail-clone-email-be.onrender.com
 
-For Users : https://gmail-clone-be-zsgo.onrender.com
+  - For Users : https://gmail-clone-be-zsgo.onrender.com
