@@ -1,0 +1,17 @@
+.adminLoginMainDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+.backToLogin:hover{
+    cursor: pointer;
+}
+
+@media (max-width:400px) {
+    .adminLoginMainDiv {
+        width: 90%;
+    }
+}
